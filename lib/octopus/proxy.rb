@@ -4,7 +4,7 @@ require 'octopus/load_balancing/round_robin'
 
 module Octopus
   class Proxy
-    attr_accessor :config, :sharded
+    attr_accessor :config, :sharded, :shards
 
     CURRENT_MODEL_KEY = 'octopus.current_model'.freeze
     CURRENT_SHARD_KEY = 'octopus.current_shard'.freeze
